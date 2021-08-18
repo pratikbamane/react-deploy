@@ -30,7 +30,7 @@ class Filter extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'http://localhost:2021/filter',
+            url: 'https://sleepy-journey-86102.herokuapp.com/filter',
             headers: { 'Content-Type': 'application/json' },
             data: {
                 mealtype_id: mealtype,
@@ -45,7 +45,7 @@ class Filter extends React.Component {
         const { mealtype, location, cuisine, lcost, hcost, page } = this.state;
         axios({
             method: 'POST',
-            url: 'http://localhost:2021/filter',
+            url: 'https://sleepy-journey-86102.herokuapp.com/filter',
             headers: { 'Content-Type': 'application/json' },
             data: {
                 sort : sort,
@@ -66,7 +66,7 @@ class Filter extends React.Component {
         const { mealtype, location, sort, cuisine, page } = this.state;
         axios({
             method: 'POST',
-            url: 'http://localhost:2021/filter',
+            url: 'https://sleepy-journey-86102.herokuapp.com/filter',
             headers: { 'Content-Type': 'application/json' },
             data: {
                 sort : sort,
